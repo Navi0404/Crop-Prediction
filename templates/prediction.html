@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Prediction</title>
+  <style>
+    body {
+    background-color: #3fc3d7;
+    color: #abb2bf;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+
+    .container {
+      background-color: #3b4048;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      background-color: #282c36;
+      color: #abb2bf;
+      border: 1px solid #444c56;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #61afef;
+      color: #282c36;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #528bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Prediction</h1>
+    <form action='/prediction' method="POST">
+      <label for="nitrogen">Nitrogen:</label>
+      <input type="text" id="nitrogen" name="nitrogen" required>
+
+      <label for="phosphorous">phosphorus:</label>
+      <input type="text" id="phosphorous" name="phosphorous" required>
+
+      <label for="potassium">Potassium:</label>
+      <input type="text" id="potassium" name="potassium" required>
+
+      <label for="temperature">Temperature:</label>
+      <input type="text" id="temperature" name="temperature" required>
+
+      <label for="humidity">Humidity:</label>
+      <input type="text" id="humidity" name="humidity" required>
+
+      <label for="ph">PH:</label>
+      <input type="text" id="ph" name="ph" required>
+
+      <label for="rainfall">Rainfall:</label>
+      <input type="text" id="rainfall" name="rainfall" required>
+
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Prediction</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3498db;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      color: #3498db;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      background-color: #ecf0f1;
+      color: #333;
+      border: 1px solid #bdc3c7;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Prediction</h1>
+    <form>
+      <label for="nitrogen">Nitrogen:</label>
+      <input type="text" id="nitrogen" name="nitrogen" required>
+
+      <label for="phosphorous">Phosphorous:</label>
+      <input type="text" id="phosphorous" name="phosphorous" required>
+
+      <label for="potassium">Potassium:</label>
+      <input type="text" id="potassium" name="potassium" required>
+
+      <label for="temperature">Temperature:</label>
+      <input type="text" id="temperature" name="temperature" required>
+
+      <label for="humidity">Humidity:</label>
+      <input type="text" id="humidity" name="humidity" required>
+
+      <label for="ph">pH:</label>
+      <input type="text" id="ph" name="ph" required>
+
+      <label for="rainfall">Rainfall:</label>
+      <input type="text" id="rainfall" name="rainfall" required>
+
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html> -->
+
+
