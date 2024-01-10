@@ -34,7 +34,7 @@ def prediction():
                                 float(temp),float(humi),float(ph),float(rain)]])
          print(res)
 
-         conn=sqlite3.connect('cropdata.db')
+         conn=sqlite3.connect('Cropdata.db')
          cur=conn.cursor()
          cur.execute(f'''INSERT INTO CROP VALUES({nitro},{phos},{potas},{temp},
                         {humi},{ph},{rain},'{res[0]}')''')
